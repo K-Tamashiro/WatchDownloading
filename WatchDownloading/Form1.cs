@@ -94,7 +94,7 @@ namespace WatchDownloading
         {
             notifyIcon = new NotifyIcon();
             // アイコンの設定
-            notifyIcon.Icon = Properties.Resources.serche;
+            notifyIcon.Icon = Properties.Resources.serche_folder;
             // アイコンを表示する
             notifyIcon.Visible = true;
             // アイコンにマウスポインタを合わせたときのテキスト

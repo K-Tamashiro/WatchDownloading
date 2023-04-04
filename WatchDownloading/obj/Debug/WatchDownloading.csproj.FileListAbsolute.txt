@@ -27,3 +27,13 @@ C:\Users\tamayan\Documents\Local-Repository.git\Car-System\WatchDownloading\Watc
 C:\Users\tamayan\Documents\Local-Repository.git\Car-System\WatchDownloading\WatchDownloading\obj\Debug\WatchDownloading.csproj.CoreCompileInputs.cache
 C:\Users\tamayan\Documents\Local-Repository.git\Car-System\WatchDownloading\WatchDownloading\obj\Debug\WatchDownloading.exe
 C:\Users\tamayan\Documents\Local-Repository.git\Car-System\WatchDownloading\WatchDownloading\obj\Debug\WatchDownloading.pdb
+F:\GITHUB\WatchDownloading\WatchDownloading\bin\Debug\WatchDownloading.exe.config
+F:\GITHUB\WatchDownloading\WatchDownloading\bin\Debug\WatchDownloading.exe
+F:\GITHUB\WatchDownloading\WatchDownloading\bin\Debug\WatchDownloading.pdb
+F:\GITHUB\WatchDownloading\WatchDownloading\obj\Debug\WatchDownloading.csproj.AssemblyReference.cache
+F:\GITHUB\WatchDownloading\WatchDownloading\obj\Debug\WatchDownloading.Form1.resources
+F:\GITHUB\WatchDownloading\WatchDownloading\obj\Debug\WatchDownloading.Properties.Resources.resources
+F:\GITHUB\WatchDownloading\WatchDownloading\obj\Debug\WatchDownloading.csproj.GenerateResource.cache
+F:\GITHUB\WatchDownloading\WatchDownloading\obj\Debug\WatchDownloading.csproj.CoreCompileInputs.cache
+F:\GITHUB\WatchDownloading\WatchDownloading\obj\Debug\WatchDownloading.exe
+F:\GITHUB\WatchDownloading\WatchDownloading\obj\Debug\WatchDownloading.pdb

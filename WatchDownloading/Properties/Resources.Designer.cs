@@ -83,6 +83,16 @@ namespace WatchDownloading.Properties {
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
+        internal static System.Drawing.Icon serche_folder {
+            get {
+                object obj = ResourceManager.GetObject("serche_folder", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
+        /// </summary>
         internal static System.Drawing.Icon tetsujin {
             get {
                 object obj = ResourceManager.GetObject("tetsujin", resourceCulture);

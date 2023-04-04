@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>tetsujin.ico</ApplicationIcon>
+    <ApplicationIcon>serche-folder.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>WatchDownloading.Program</StartupObject>
@@ -105,8 +105,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon\pict-back.jpg" />
+    <Content Include="icon\serche-folder.ico" />
     <Content Include="icon\serche.ico" />
     <Content Include="icon\tetsujin.ico" />
+    <None Include="Resources\serche-folder.ico" />
+    <Content Include="serche-folder.ico" />
     <Content Include="tetsujin.ico" />
     <None Include="icon\title.png" />
   </ItemGroup>
