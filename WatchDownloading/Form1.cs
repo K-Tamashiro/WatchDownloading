@@ -40,8 +40,21 @@ namespace WatchDownloading
             WatchPath_to = textBox2.Text;
             textBox3.Text = ini.GetString("Download", "File", WatchFile);
             WatchFile = textBox3.Text;
+
+            if (ini.GetString("Option", "Copy", "True")=="True")
+            {
+                radioButton1.Checked = true;
+                radioButton2.Checked = false;
+            }
+            else
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = true;
+            }
+
+
             //初回起動でDirectoryが無ければ作成
-            if(!Directory.Exists(AppdataSave.LocalAppData))
+            if (!Directory.Exists(AppdataSave.LocalAppData))
             {
                 Directory.CreateDirectory(AppdataSave.LocalAppData);
             }
@@ -261,10 +274,22 @@ namespace WatchDownloading
 
                     try
                     {
-                        //上書きコピー
-                        File.Copy(e.FullPath, fn, true);
-                        Console.WriteLine(
-                            "ファイル 「" + e.FullPath + "」が「" + WatchPath_to + "」にコピーされました。");
+                        if (radioButton1.Checked == true)
+                        {
+                            //上書きコピー
+                            File.Copy(e.FullPath, fn, true);
+                            Console.WriteLine(
+                                "ファイル 「" + e.FullPath + "」が「" + WatchPath_to + "」にコピーされました。");
+                        }
+                        else
+                        {
+                            //ファイル移動は上書き出来ないので予め削除メソッドを実行
+                            File.Delete(fn);
+                            //上書き移動
+                            File.Move(e.FullPath, fn);
+                            Console.WriteLine(
+                                "ファイル 「" + e.FullPath + "」が「" + WatchPath_to + "」に移動されました。");
+                        }
                     }
                     catch
                     {
@@ -383,6 +408,19 @@ namespace WatchDownloading
                 "登録",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            var ini = new IniFile(@ExePath);
+            if (radioButton1.Checked == true)
+            {
+                ini.WriteString("Option", "Copy", @"True"); // 文字列を書き込み
+            }
+            else
+            {
+                ini.WriteString("Option", "Copy", @"False"); // 文字列を書き込み
+            }
         }
     }
 }
